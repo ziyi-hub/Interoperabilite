@@ -1,0 +1,55 @@
+body {
+    color: #fff;
+    overflow-x: hidden;
+    height: auto;
+    background-image: linear-gradient(royalblue, lightpink);
+    background-repeat: no-repeat;
+    font-family: Arial;
+}
+
+  #container{
+      background-color: rgba(0,0,0,0.5);
+      padding-top: 40px;
+      text-align: center;
+      color: white;
+  }
+
+  .text{
+      padding: 10px 50px 50px 50px;
+      text-align: left;
+  }
+
+  .text p a{
+      color: white;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .col-right{
+    display: flex;
+    flex-direction: column;
+    position: center;
+  }
+
+  .col-left{
+    display: flex;
+    flex-direction: column;
+    position: center;
+  }
+
+  .charts{
+    background-color: white;
+  }
+
+  .col-chart {
+    width: 50%;
+    margin: 20px;
+  }
+
+  .col-title {
+    width: 50%;
+    margin: 20px 20px 0 20px;
+  }

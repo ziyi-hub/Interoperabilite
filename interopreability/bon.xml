@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE Bons SYSTEM "/Applications/XAMPP/xamppfiles/htdocs/projets/interopreability/bon.dtd">
+<Bons>
+    <Bon ID="B1">
+        <Entreprise ID="E1" role="emetteur" nom="Google" adresse="1600 Amphitheatre Pkwy" numTel="253-0000"
+                    fax="577347"/>
+        <Entreprise nom="Paul" adresse="15 rue de Saint Nicole" role="recepteur" ID="E99" numTel="06 17 98 63 04" fax="882555"/>
+
+        <Date>2021-11-22</Date>
+        <Montant>2000</Montant>
+        <Produits>
+            <Produit IDREF="P1" quantité="2" référence="google" intitulé="Google computer" prixUnitaire="1000"/>
+        </Produits>
+    </Bon>
+
+    <Bon ID="B2">
+        <Entreprise ID="E2" role="emetteur" nom="Applle" adresse="379 Stanford Shopping Center" numTel="798-6180"
+                    fax="540748"/>
+        <Entreprise ID="E55" role="recepteur" adresse="14 rue de Pancre" numTel="07 16 93 72 04" fax="540748"
+                    nom="Thibaut"/>
+        <Date>2021-11-23</Date>
+        <Montant>1500</Montant>
+        <Produits>
+            <Produit IDREF="P2" quantité="1" intitulé="iphone13 pro" prixUnitaire="1000"/>
+            <Produit IDREF="P2" quantité="1" intitulé="ipaid air2" prixUnitaire="500"/>
+        </Produits>
+    </Bon>
+
+    <Bon ID="B3">
+        <Entreprise ID="E3" role="emetteur" nom="Microsoft" adresse="1020 Entreprise Way SunnyVal" numTel="617-1803"
+                    fax="379261"/>
+        <Entreprise ID="E34" role="recepteur" nom="Ziyi" adresse="61 rue de Boudonville" numTel="0618978204"/>
+        <Date>2021-11-24</Date>
+        <Montant>900</Montant>
+        <Produits>
+            <Produit IDREF="P3" quantité="3" intitulé="XBox" prixUnitaire="300"/>
+        </Produits>
+    </Bon>
+</Bons>

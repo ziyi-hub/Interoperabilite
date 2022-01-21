@@ -1,0 +1,23 @@
+<!ELEMENT Bons (Bon*)>
+<!ELEMENT Bon (Entreprise, Entreprise, Date, Montant, Produits)>
+<!ELEMENT Entreprise EMPTY>
+<!ELEMENT Produits (Produit*)>
+<!ELEMENT Produit EMPTY>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT Montant (#PCDATA)>
+<!ATTLIST Bon ID ID #REQUIRED>
+<!ATTLIST Produit
+    IDREF CDATA #REQUIRED
+    référence CDATA #IMPLIED
+    intitulé CDATA #REQUIRED
+    quantité CDATA #REQUIRED
+    prixUnitaire CDATA #REQUIRED
+>
+<!ATTLIST Entreprise
+    nom CDATA #REQUIRED
+    adresse CDATA #REQUIRED
+    numTel CDATA #IMPLIED
+    fax CDATA #IMPLIED
+    role (emetteur | recepteur) #REQUIRED
+    ID CDATA #REQUIRED
+>

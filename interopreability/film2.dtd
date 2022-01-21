@@ -1,0 +1,35 @@
+<!ELEMENT BASE (FILMS, REALISATEURS, ACTEURS) >
+<!ELEMENT FILMS (Film)* >
+<!ELEMENT REALISATEURS (Realisateur)*>
+<!ELEMENT Realisateur (Nom, Prenom)>
+<!ELEMENT Film (Titre, (Scenario)*, Genre, Pays, Duree, Resume, (Palmares)*,
+                (Sortie)?, (Image)*, (Montage)*, (Musique)*, (Producteur)+, Distributeur, (Critique)*)>
+<!ELEMENT Scenario     (Nom, Prenom)>
+<!ELEMENT Image        (Nom, Prenom)>
+<!ELEMENT Acteur       (Nom, (Prenom)?)>
+<!ELEMENT Montage      (Nom, Prenom)>
+<!ELEMENT ACTEURS      (Acteur)+ >
+<!ELEMENT Critique     (Media, Auteur, (Note)?, (Titre)?, Texte) >
+<!ELEMENT Resume       ((Titre)?, Texte) >
+<!ELEMENT Genre        (#PCDATA) >
+<!ELEMENT Note         (#PCDATA) >
+<!ELEMENT Media        (#PCDATA) >
+<!ELEMENT Auteur       (#PCDATA) >
+<!ELEMENT Texte        (#PCDATA) >
+<!ELEMENT Pays         (#PCDATA) >
+<!ELEMENT Sortie       (#PCDATA) >
+<!ELEMENT Palmares     (#PCDATA) >
+<!ELEMENT Distributeur (#PCDATA) >
+<!ELEMENT Producteur   (#PCDATA) >
+<!ELEMENT Titre        (#PCDATA) >
+<!ELEMENT Duree        (#PCDATA) >
+<!ELEMENT Nom          (#PCDATA) >
+<!ELEMENT Prenom       (#PCDATA) >
+<!ELEMENT Musique      (#PCDATA) >
+<!ATTLIST Film ID ID #REQUIRED
+                REALISATEURREF IDREFS #IMPLIED
+                ACTEURREF IDREFS #IMPLIED
+                Langue (fr|uk|vo) #REQUIRED
+                Affiche CDATA "none">
+<!ATTLIST Realisateur ID ID #REQUIRED>
+<!ATTLIST Acteur ID ID #REQUIRED>

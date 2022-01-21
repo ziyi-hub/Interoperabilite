@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circulations-OLIVIA-WANG</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="row">
+    <div class="col-left col-title">
+      <h2><center>Hospitalisations</center></h2>
+    </div>
+
+    <div class="col-left col-title">
+      <h2><b><center>Réanimations</center></b></h2>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-left col-chart charts">
+        <canvas id="chart1"></canvas>
+      </div>
+
+      <div class="col-right col-chart charts">
+        <canvas id="chart2"></canvas>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-left col-title">
+      <h2><center>Taux d'incidence</center></h2>
+    </div>
+
+    <div class="col-left col-title">
+      <h2><b><center>Taux de contamination (R0)</center></b></h2>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-left col-chart charts">
+        <canvas id="chart3"></canvas>
+      </div>
+
+      <div class="col-right col-chart charts">
+        <canvas id="chart4"></canvas>
+      </div>
+  </div>
+  <script src="./js/courbe.js" type="text/javascript"></script>
+</body>
+</html>

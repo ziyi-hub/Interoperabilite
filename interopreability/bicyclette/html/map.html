@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bicyclette-OLIVIA-WANG</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-lg-8 col-md-8" id="map" style="height: 750px;"></div>
+        <div class="col-lg-4 col-md-4" id="container">
+            <h4><b>Auteurs : <em style="color:yellow;">Tania OLIVIA et Ziyi WANG</em></b></h4>
+            <br> <br>
+            <h4><b><u>Informations sur les marquers</u></b></h4>
+            <div class="text">
+                <p><img src="./img/marker-icon-2x-gold.png" style="height: 50px;"> <b>: Votre position</b></p>
+                <p><img src="./img/marker-icon-2x-violet.png" style="height: 50px;"> <b>: Position d'autres addresses</b></p>
+                <p><img src="./img/marker-icon-2x-red.png" style="height: 50px;"> <b>: Position des parkings du vélo</b></p>
+            </div>
+            <h4><b><u>Liens utilisés</u></b></h4>
+            <div class="text">
+                <p><a href="https://github.com/taniaolivia/bicyclette-OLIVIA-WANG">Lien Github</a></p>
+                <p><a href="http://ip-api.com/xml">API Géolocalisation IP</a></p>
+                <p><a href="https://www.infoclimat.fr/public-api/gfs/xml?_ll=48.67103,6.15083&_auth=ARsDFFIsBCZRfFtsD3lSe1Q8ADUPeVRzBHgFZgtuAH1UMQNgUTNcPlU5VClSfVZkUn8AYVxmVW0Eb1I2WylSLgFgA25SNwRuUT1bPw83UnlUeAB9DzFUcwR4BWMLYwBhVCkDb1EzXCBVOFQoUmNWZlJnAH9cfFVsBGRSPVs1UjEBZwNkUjIEYVE6WyYPIFJjVGUAZg9mVD4EbwVhCzMAMFQzA2JRMlw5VThUKFJiVmtSZQBpXGtVbwRlUjVbKVIuARsDFFIsBCZRfFtsD3lSe1QyAD4PZA%3D%3D&_c=19f3aa7d766b6ba91191c8be71dd1ab2">API Météo</a></p>
+                <p><a href="http://www.velostanlib.fr/service/carto">API Parkings velolib1</a></p>
+                <p><a href="http://www.velostanlib.fr/service/stationdetails/nancy/1">API Parkings velolib2</a></p>
+                <p><a href="http://www.velostanlib.fr/service/stationdetails/nancy/1">API Parkings velolib2</a></p>
+            </div>
+
+    </div>
+    <script src="./js/map.js" type="text/javascript"></script>
+</body>
+</html>
